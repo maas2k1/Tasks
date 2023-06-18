@@ -1,11 +1,11 @@
-import { checkNumber } from './evenOddLogic';
+import { HandleInput } from './App';
 
-describe('Even/Odd Logic', () => {
+describe('App', () => {
   test('should return "even" when the number is even', () => {
-    expect(checkNumber(4)).toBe('even');
+    expect(HandleInput(4)).toBe('even');
   });
 
   test('should return "odd" when the number is odd', () => {
-    expect(checkNumber(7)).toBe('odd');
+    expect(HandleInput(7)).toBe('odd');
   });
 });
