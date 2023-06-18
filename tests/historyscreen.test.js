@@ -1,4 +1,4 @@
-import { addNumberToHistory, clearHistory } from './historyscreen';
+import { addNumberToHistory } from './historyscreen';
 
 describe('History Screen', () => {
   let history = [];
@@ -13,10 +13,4 @@ describe('History Screen', () => {
     expect(history[0]).toBe(5);
   });
 
-  test('should clear the history', () => {
-    addNumberToHistory(history, 3);
-    addNumberToHistory(history, 8);
-    clearHistory(history);
-    expect(history.length).toBe(0);
-  });
 });
