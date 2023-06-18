@@ -1,4 +1,4 @@
-import { handleSubmitForm } from './formscreen';
+import { handleFormSubmit } from './formscreen';
 
 
 const navigationMock = {
